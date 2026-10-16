@@ -1,0 +1,39 @@
+# Dependencies
+node_modules/
+frontend/node_modules/
+backend/node_modules/
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# Build output
+dist/
+build/
+coverage/
+
+# Logs
+*.log
+npm-debug.log*
+
+# Private files
+cookies.txt
+resume.pdf
+
+# Editor and operating system files
+.vscode/
+.DS_Store
+Thumbs.db
+frontend/.git-backup/
+frontend/.git-backup/
+frontend/.git-backup/
+
+# Local backups and temporary files
+frontend-backup.bundle
+backend/untitled
+backend/src/services/temp.js
+
+# Vite / Next.js build output
+frontend/dist/
+frontend/.next/

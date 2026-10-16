@@ -1,0 +1,95 @@
+{
+  _id: ObjectId('6abe73679c6daca06bf1fd27'),
+  matchScore: NumberInt('75'),
+  behavioralQuestions: [
+    {
+      question: 'Tell me about a time when you had to learn a new technology quickly for a project. How did you approach it?',
+      intention: 'To evaluate the candidate\'s adaptability, self-learning capability, and problem-solving skills when faced with unfamiliar technical stacks.',
+      answer: 'The candidate should mention how they picked up TypeScript, Node.js, and Tailwind CSS for their Recipe Suggestion App. They should describe reading official documentation, building small prototypes, and applying concepts iteratively.'
+    },
+    {
+      question: 'Describe a project where you faced a significant technical hurdle and how you resolved it.',
+      intention: 'To assess the candidate\'s debugging skills, resilience, and analytical thinking during development challenges.',
+      answer: 'The candidate can reference their Deep Learning battery estimation project where they identified and fixed a data-leakage flaw by designing a chronological cycle-level split. They should emphasize their methodological approach to diagnosing the issue and validating the solution.'
+    }
+  ],
+  technicalQuestions: [
+    {
+      question: 'Can you explain how you implemented JWT-based authentication in your Recipe Suggestion App using Node.js and Express?',
+      intention: 'To evaluate the candidate\'s practical understanding of backend security, REST APIs, and authentication mechanisms required for full stack development.',
+      answer: 'The candidate should explain that they used JSON Web Tokens to securely transmit user information between the client and server. Upon successful login, a token is generated, signed with a secret key, and stored securely in cookies. For protected routes, middleware verifies the token before granting access to resources.'
+    },
+    {
+      question: 'How do you manage state and data flow between a frontend application and a backend REST API built with Node.js and MongoDB?',
+      intention: 'To assess the candidate\'s knowledge of full stack architecture, API integration, and database operations using MongoDB.',
+      answer: 'The candidate should discuss how frontend components make asynchronous HTTP requests to backend endpoints. The Node.js and Express backend then interacts with MongoDB using Mongoose or native drivers to perform CRUD operations and return JSON responses to the client.'
+    },
+    {
+      question: 'What is the difference between SQL and NoSQL databases, and why did you choose MongoDB for the Recipe Suggestion App?',
+      intention: 'To test the candidate\'s database selection rationale and understanding of both relational and non-relational database paradigms.',
+      answer: 'The candidate should explain that SQL databases are relational and use structured schemas with tables, whereas NoSQL databases like MongoDB are document-oriented and flexible. MongoDB was chosen because recipe data with varying ingredients and metadata fits well into a flexible JSON-like document structure.'
+    }
+  ],
+  skillGaps: [
+    {
+      skill: 'JavaScript',
+      severity: 'hard skill'
+    },
+    {
+      skill: 'React',
+      severity: 'hard skill'
+    },
+    {
+      skill: 'OOP',
+      severity: 'knowledge gap'
+    },
+    {
+      skill: 'DSA',
+      severity: 'knowledge gap'
+    }
+  ],
+  preparationPlans: [
+    {
+      day: NumberInt('1'),
+      focus: 'React and Frontend Fundamentals',
+      tasks: [
+        'Review core React concepts including components, props, state, and hooks.',
+        'Practice building small component-based user interfaces.',
+        'Understand state management in single-page applications.'
+      ],
+      _id: ObjectId('6abe73679c6daca06bf1fd28')
+    },
+    {
+      day: NumberInt('2'),
+      focus: 'Advanced JavaScript and OOP',
+      tasks: [
+        'Brush up on modern JavaScript ES6+ features such as arrow functions, destructuring, and asynchronous programming.',
+        'Review Object-Oriented Programming principles including inheritance, encapsulation, and polymorphism.'
+      ],
+      _id: ObjectId('6abe73679c6daca06bf1fd29')
+    },
+    {
+      day: NumberInt('3'),
+      focus: 'Data Structures and Algorithms (DSA)',
+      tasks: [
+        'Solve common coding problems related to arrays, strings, and hash maps.',
+        'Review basic searching and sorting algorithms.'
+      ],
+      _id: ObjectId('6abe73679c6daca06bf1fd2a')
+    },
+    {
+      day: NumberInt('4'),
+      focus: 'Full Stack Integration and REST APIs',
+      tasks: [
+        'Review Express.js routing, middleware, and error handling.',
+        'Practice connecting a Node.js backend with MongoDB and performing queries.',
+        'Prepare to discuss the Recipe Suggestion App project architecture.'
+      ],
+      _id: ObjectId('6abe73679c6daca06bf1fd2b')
+    }
+  ],
+  user: ObjectId('6ab7c1c30dde882ccb4f9e20'),
+  createdAt: ISODate('2026-10-01T14:51:19.454Z'),
+  updatedAt: ISODate('2026-10-01T14:51:19.454Z'),
+  __v: NumberInt('0')
+}

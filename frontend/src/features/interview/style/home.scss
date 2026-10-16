@@ -1,0 +1,391 @@
+.home {
+    width: 100%;
+    min-height: 100vh;
+    margin-inline: auto;
+    padding: 2rem 1.5rem 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.75rem;
+    color: #f5f6f8;
+    background: radial-gradient(ellipse at 50% 0%, #17111c 0%, #0b0d11 58%, #090b0e 100%);
+
+.home-reports-button {
+    margin-top: 20px;
+    padding: 12px 20px;
+    border: 1px solid #444;
+    border-radius: 8px;
+    background: #fff;
+    color: #171717;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: opacity 0.2s ease;
+}
+
+.home-reports-button:hover {
+    opacity: 0.85;
+}
+
+    .home-heading {
+        text-align: center;
+
+        h1 {
+            margin: 0;
+            font-size: 2.2rem;
+            line-height: 1.15;
+            font-weight: 750;
+            white-space: nowrap;
+        }
+
+        h1 span {
+            background: linear-gradient(100deg, #ff1764 10%, #c36bff 96%);
+            background-clip: text;
+            color: transparent;
+        }
+
+        p {
+            margin: 0.65rem 0 0;
+            color: #a4a9b2;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+    }
+
+    .interview-panel {
+        width: min(100%, 860px);
+        min-height: 600px;
+        overflow: hidden;
+        border: 1px solid #30343c;
+        border-radius: 0.8rem;
+        background: #121619;
+        box-shadow: 0 24px 70px rgb(0 0 0 / 24%);
+    }
+
+    .interview-input-group {
+        display: flex;
+        align-items: stretch;
+        min-height: 530px;
+    }
+
+    .job-section,
+    .profile-section {
+        min-width: 0;
+        padding: 2rem;
+    }
+
+    .job-section {
+        position: relative;
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        border-right: 1px solid #30343c;
+    }
+
+    .profile-section {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .section-heading {
+        display: flex;
+        align-items: center;
+        gap: 0.7rem;
+        min-height: 2rem;
+        margin-bottom: 1.25rem;
+        padding-bottom: 0.85rem;
+        border-bottom: 1px solid #292d34;
+
+        label,
+        h2 {
+            margin: 0;
+            font-size: 0.95rem;
+            font-weight: 650;
+        }
+        h2 {
+            font-size: 1rem;
+        }
+    }
+
+    .section-icon {
+        display: grid;
+        width: 1rem;
+        aspect-ratio: 1;
+        place-items: center;
+        flex: 0 0 auto;
+        color: #f0085a;
+
+        svg {
+            width: 1rem;
+            height: 1rem;
+        }
+    }
+
+    .character-counter {
+        position: absolute;
+        right: 2.45rem;
+        bottom: 2.45rem;
+        padding: 0.25rem 0.4rem;
+        border-radius: 0.2rem;
+        background: #131821;
+        color: #a4a9b2;
+        font-size: 0.62rem;
+    }
+
+    .required-tag,
+    .optional-tag {
+        margin-left: auto;
+        color: #f0085a;
+        font-size: 0.58rem;
+        font-weight: 700;
+        letter-spacing: 0.04em;
+    }
+
+    .field-label {
+        margin: 0 0 0.65rem;
+        color: #e4e6e9;
+        font-size: 0.78rem;
+        font-weight: 600;
+    }
+
+    textarea {
+        width: 100%;
+        min-height: 27rem;
+        flex: 1;
+        padding: 1rem;
+        border: 1px solid #2d323a;
+        border-radius: 0.45rem;
+        outline: none;
+        background: #1d222a;
+        color: #f5f6f8;
+        font: inherit;
+        font-size: 0.82rem;
+        line-height: 1.65;
+        resize: vertical;
+        transition: border-color 160ms ease, box-shadow 160ms ease;
+
+        &::placeholder {
+            color: #777e89;
+        }
+
+        &:focus {
+            border-color: #bd1451;
+            box-shadow: 0 0 0 3px rgb(240 8 90 / 12%);
+        }
+    }
+
+    .input-group {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .file-label {
+        display: flex;
+        min-height: 9rem;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 0.45rem;
+        padding: 1rem;
+        border: 1px dashed #515661;
+        border-radius: 0.5rem;
+        background: #171b20;
+        color: #f2f3f5;
+        cursor: pointer;
+        text-align: center;
+        transition: border-color 160ms ease, background 160ms ease;
+
+        &:hover {
+            border-color: #f0085a;
+            background: #1b1b22;
+        }
+
+        strong {
+            font-size: 0.78rem;
+            font-weight: 600;
+        }
+
+        > span:last-child {
+            max-width: 100%;
+            overflow-wrap: anywhere;
+            color: #9298a2;
+            font-size: 0.68rem;
+        }
+
+        i {
+            font-style: normal;
+        }
+    }
+
+    .upload-icon {
+        display: grid;
+        width: 2.5rem;
+        aspect-ratio: 1;
+        place-items: center;
+        margin-bottom: 0.25rem;
+        border: 1px solid #39313b;
+        border-radius: 50%;
+        color: #ff1764;
+        font-size: 1.3rem;
+
+        svg {
+            width: 1.1rem;
+            height: 1.1rem;
+        }
+    }
+
+    .or-divider {
+        display: flex;
+        align-items: center;
+        gap: 0.8rem;
+        color: #858b94;
+        font-size: 0.65rem;
+
+        &::before,
+        &::after {
+            height: 1px;
+            flex: 1;
+            background: #292d34;
+            content: "";
+        }
+    }
+
+    .description-group textarea {
+        min-height: 6.5rem;
+        flex: initial;
+    }
+
+    .form-note {
+        display: flex;
+        align-items: flex-start;
+        gap: 0.7rem;
+        margin: 0;
+        padding: 0.85rem;
+        border: 1px solid #263d68;
+        border-radius: 0.4rem;
+        background: #151f35;
+        color: #d6e0f3;
+        font-size: 0.7rem;
+        line-height: 1.5;
+
+        span {
+            display: grid;
+            width: 1rem;
+            height: 1rem;
+            flex: 0 0 auto;
+            place-items: center;
+            border-radius: 50%;
+            background: #6ea9ff;
+            color: #101827;
+            font-size: 0.68rem;
+            font-weight: 800;
+        }
+    }
+
+    .panel-footer {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+        padding: 1rem 2rem;
+        border-top: 1px solid #30343c;
+
+        p {
+            margin: 0;
+            color: #a4a9b2;
+            font-size: 0.72rem;
+        }
+
+        p span {
+            padding-inline: 0.25rem;
+            color: #f0085a;
+        }
+
+        .button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.6rem;
+            min-height: 2.8rem;
+            border-radius: 0.4rem;
+            font-size: 0.83rem;
+            font-weight: 650;
+            box-shadow: 0 0 20px rgb(240 8 90 / 22%);
+        }
+    }
+}
+
+@media (max-width: 720px) {
+    .home {
+        justify-content: flex-start;
+        gap: 1.5rem;
+        padding: 2.5rem 1rem;
+
+        .home-heading h1 {
+            font-size: 1.55rem;
+            white-space: normal;
+        }
+
+        .desktop-break {
+            display: none;
+        }
+        .interview-input-group {
+            flex-direction: column;
+        }
+        .job-section,
+        .profile-section {
+            padding: 1.25rem;
+        }
+        .job-section {
+            min-height: 22rem;
+            border-right: 0;
+            border-bottom: 1px solid #30343c;
+        }
+        .job-section textarea {
+            min-height: 16rem;
+        }
+        .panel-footer {
+            align-items: stretch;
+            flex-direction: column;
+            padding: 1rem 1.25rem;
+        }
+    }
+}
+.profile-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.profile-title {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    min-width: 0;
+}
+
+.profile-title h2 {
+    margin: 0;
+}
+
+.home-reports-button {
+    flex-shrink: 0;
+    padding: 9px 12px;
+    border: 1px solid #444;
+    border-radius: 8px;
+    background: #fff;
+    color: #171717;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.home-reports-button {
+    flex-shrink: 0;
+    margin: 0;
+    font-size: 14px;
+}
